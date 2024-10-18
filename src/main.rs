@@ -8,7 +8,7 @@ const BORDER_THICKNESS: u16 = 5;
 const BORDER_COLOR: Color = GRAY;
 
 const TURN_SPEED: f32 = PI / 128.;
-const DEFAULT_LINE_SPEED: f32 = 30.;
+const DEFAULT_LINE_SPEED: f32 = 50.;
 const PLAYER_RADIUS: usize = 5;
 
 #[derive(Debug)]
@@ -137,9 +137,9 @@ async fn main() {
     });
     let mut end_game = false;
     loop {
-        if is_key_down(KeyCode::Escape) {
-            return;
-        }
+        // if is_key_down(KeyCode::Escape) {
+        //     return;
+        // }
         clear_background(WHITE);
         draw_ui();
 
